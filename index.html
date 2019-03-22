@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Weight Converter</title>
+	
+	<style>
+		body{
+			margin-top: 70px;
+			background: #333;
+			color:#fff;
+		}
+		.card{
+			background: coral;
+			color:#fff;
+		}
+	</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-4 text-center mb-3">Weight Converter</h1>
+				<form>
+					<div class="row">
+
+						<div class="form-group col-md-4">
+							<select type="text" id="sWeight" class="form-control form-control-lg" onchange="return showDiv();" >
+								<option value="0">Choose..</option>
+								<option value="1">Grams</option>
+								<option value="2">Kilograms</option>
+								<option value="3">Pounds</option>
+								<option value="4">Ounce</option>
+
+							</select>
+						</div>
+						<div class="form-group col-md-8">
+
+							<input id="lbsInput" type="number" class="form-control form-control-lg"  placeholder="Enter..." onfocus="if(this.value == 'value') { this.value = ''; }" value="value">
+
+						</div>
+						
+					</div>
+	
+				</form>
+				
+
+					<div class="output">
+
+					
+							<div id="gCard" class="card bg-primary  form-control form-control-lg mb-2 " style="display: none;">
+								<div class="card-block">
+									<h5>Grams:</h5>
+									<div id="grmOutput"></div> 
+								</div>
+							</div>
+					
+
+							<div id="kgCard" class="card bg-success form-control form-control-lg mb-2"  style="display: none;" >
+								<div class="card-block">
+									<h5>Kilograms:</h5>
+									<div id="kgOutput"></div>
+								</div>
+							</div>
+					
+
+							<div id="pdsCard" class="card bg-danger form-control form-control-lg mb-2"  style="display: none;">
+								<div class="card-block">
+									<h5>Pounds:</h5>
+									<div id="pdsOutput"></div>
+								</div>
+							</div>
+					
+
+							<div id="ozCard" class="card bg-warning form-control form-control-lg mb-2"  style="display: none;">
+								<div class="card-block">
+									<h5>Ounces:</h5>
+									<div id="ozOutput"></div>
+								</div>
+							</div>
+				
+					</div>
+
+			
+
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
